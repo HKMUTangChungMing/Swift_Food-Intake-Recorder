@@ -45,17 +45,11 @@ There are many mobile phone applications that use neural networks, but the advan
 
 ![image-20250425105420273](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105420273.png) 
 
-![image-20250425105450571](C:\Users\great\AppData\Roaming\Typora\typora-user-images\image-20250425105450571.png) 
+![image-20250425111425957](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425111425957.png)![image-20250425105458525](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105458525.png) 
 
-![image-20250425105458525](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105458525.png) 
+![image-20250425105505896](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105505896.png) ![image-20250425105513741](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105513741.png)
 
-![image-20250425105505896](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105505896.png) 
-
-![image-20250425105513741](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105513741.png)
-
-![image-20250425105524986](C:\Users\great\AppData\Roaming\Typora\typora-user-images\image-20250425105524986.png) 
-
-![image-20250425105533203](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105533203.png) 
+![image-20250425105524986](C:\Users\great\AppData\Roaming\Typora\typora-user-images\image-20250425105524986.png) ![image-20250425105533203](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105533203.png) 
 
 
 
@@ -140,21 +134,15 @@ After you take the photo, than you can give the star with the favorite Food.
 ![image-20250425110151344](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110151344.png) 
 
 
-
 **Menu**
 
 ![image-20250425110211011](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110211011.png)
-
-
 
 **Camera**
 
 Use the gViewController to detect the Food.
 
 ![image-20250425110233834](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110233834.png)
-
-
-
 
 
 **Camera 2**
@@ -164,7 +152,6 @@ Use the View Controller to take the photo in the mobile.
 ![image-20250425110312764](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110312764.png)
 
 
-
 **Give Star**
 
 After you take the photo, than you can give the star with the favorite Food.
@@ -172,16 +159,11 @@ After you take the photo, than you can give the star with the favorite Food.
 ![image-20250425110332127](C:\Users\great\AppData\Roaming\Typora\typora-user-images\image-20250425110332127.png)
 
 
-
 **See the information**
 
 To introduct the Food Nutritional Value
 
 ![image-20250425110344402](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110344402.png)
-
-
-
-
 
 
 
@@ -200,43 +182,22 @@ To introduct the Food Nutritional Value
 ![image-20250425110430545](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110430545.png)
 
 
-
-
-
 **Display the Star page**
-
 
 
 ![image-20250425110438053](C:\Users\great\AppData\Roaming\Typora\typora-user-images\image-20250425110438053.png)
 
 
-
 **Edit the Star page**
-
 
 
 ![image-20250425110503099](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110503099.png)
 
 **Take the photo in the photo** **album**
 
-![image-20250425110517188](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110517188.png)
+![image-20250425110517188](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110517188.png)![image-20250425110602388](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110602388.png)
 
-
-
-![image-20250425110602388](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110602388.png)
-
-
-
-![image-20250425110610918](C:\Users\great\AppData\Roaming\Typora\typora-user-images\image-20250425110610918.png)
-
-![image-20250425110618174](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110618174.png)
-
-
-
-
-
-
-
+![image-20250425110610918](C:\Users\great\AppData\Roaming\Typora\typora-user-images\image-20250425110610918.png)![image-20250425110618174](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110618174.png)
 
 
 ![](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110628599.png)
@@ -244,36 +205,21 @@ To introduct the Food Nutritional Value
 ![image-20250425110637018](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425110637018.png)
 
 
-
-
-
 # References
 
- 
 
 **Download Vott FOR MAC or WINDOWS**
 
 https://github.com/Microsoft/VoTT/releases
 
- 
-
- 
-
 **Use VOTT and Create ML to create Apple object detection model**
 
 https://www.youtube.com/watch?v=eQNtPni4OWg
 
- 
-
- 
 
 **Change Json format Software**
 
 https://github.com/Hansoong/mlformathelper
-
- 
-
- 
 
 **Recognizing Objects in Live Capture**
 
