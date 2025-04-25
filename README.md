@@ -49,7 +49,7 @@ There are many mobile phone applications that use neural networks, but the advan
 
 ![image-20250425105505896](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105505896.png) ![image-20250425105513741](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105513741.png)
 
-![image-20250425105524986](C:\Users\great\AppData\Roaming\Typora\typora-user-images\image-20250425105524986.png) ![image-20250425105533203](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105533203.png) 
+![image-20250425105533203](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425105533203.png) ![image-20250425111619754](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425111619754.png)
 
 
 
