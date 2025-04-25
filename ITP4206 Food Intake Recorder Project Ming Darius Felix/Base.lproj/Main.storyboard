@@ -1,0 +1,1816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mh1-Wg-8Nx">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="H56-7L-q22">
+            <objects>
+                <navigationController id="Mh1-Wg-8Nx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I9h-sw-Jz2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y0H-v6-h2v" kind="relationship" relationship="rootViewController" id="ph3-4v-fBj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgF-9l-wCF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3129" y="-54"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eEy-eE-WYd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Y0H-v6-h2v" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="znw-Ti-sA3"/>
+                        <viewControllerLayoutGuide type="bottom" id="oxa-8j-Jxe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="udt-LR-lfI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banner5" translatesAutoresizingMaskIntoConstraints="NO" id="od5-K2-EiD">
+                                <rect key="frame" x="0.0" y="47" width="375" height="572"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDV-45-SIn">
+                                <rect key="frame" x="71" y="581" width="84" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Detect"/>
+                                <connections>
+                                    <segue destination="Guf-hf-AUD" kind="presentation" id="kxq-8P-aTB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNk-rA-nlB">
+                                <rect key="frame" x="121" y="237" width="81" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Banana"/>
+                                <connections>
+                                    <segue destination="sqe-Hx-pR1" kind="presentation" id="OlL-Wy-Xrt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1Y-Ri-8N9">
+                                <rect key="frame" x="251" y="634" width="94" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Give Star"/>
+                                <connections>
+                                    <segue destination="X17-WH-DtB" kind="presentation" id="HqH-gC-yPr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDx-Kk-R84">
+                                <rect key="frame" x="127" y="470" width="81" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Orange"/>
+                                <connections>
+                                    <segue destination="RAi-zS-4Sc" kind="presentation" id="ehQ-4f-B7q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxt-lW-Jg5">
+                                <rect key="frame" x="121" y="164" width="73" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Carrot"/>
+                                <connections>
+                                    <segue destination="dxO-5I-mL8" kind="presentation" id="QJT-5S-X40"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1d-9f-2dm">
+                                <rect key="frame" x="123" y="88" width="70" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Citrus"/>
+                                <connections>
+                                    <segue destination="EUO-JW-idw" kind="presentation" id="0RA-ZP-khC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAq-kw-hKc">
+                                <rect key="frame" x="123" y="395" width="76" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Lemon"/>
+                                <connections>
+                                    <segue destination="Lp9-Yf-6if" kind="presentation" id="dNA-XU-ahY"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="Cc2-0I-0uz">
+                                <rect key="frame" x="15" y="596" width="60" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GiveStar" translatesAutoresizingMaskIntoConstraints="NO" id="Ktz-gq-Fsi">
+                                <rect key="frame" x="190" y="586" width="88" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qu-Gk-4B9">
+                                <rect key="frame" x="110" y="533" width="108" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Strawberry"/>
+                                <connections>
+                                    <segue destination="9HL-Og-aGO" kind="presentation" id="3zs-AD-Q9O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFH-Mo-8hz">
+                                <rect key="frame" x="130" y="312" width="54" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Egg"/>
+                                <connections>
+                                    <segue destination="HHf-oq-FLk" kind="presentation" id="E9a-gY-TWA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOa-CZ-Bfo">
+                                <rect key="frame" x="71" y="634" width="108" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Take photo"/>
+                                <connections>
+                                    <segue destination="AFS-aC-WwG" kind="presentation" id="kFk-F0-gVH"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="click" translatesAutoresizingMaskIntoConstraints="NO" id="UMa-kb-E9k">
+                                <rect key="frame" x="144" y="585" width="35" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="click" translatesAutoresizingMaskIntoConstraints="NO" id="zeY-rg-FeP">
+                                <rect key="frame" x="170" y="627" width="35" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="click" translatesAutoresizingMaskIntoConstraints="NO" id="neB-N2-zJX">
+                                <rect key="frame" x="333" y="620" width="35" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RQK-0C-gUC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7M-wJ-kpl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1375.2" y="-54.422788605697157"/>
+        </scene>
+        <!--Banana-->
+        <scene sceneID="qsC-DL-EzK">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="sqe-Hx-pR1" customClass="Banana" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6vq-Q0-XkQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="qC9-Bu-PHJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1gs-AG-OYa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lak-Rh-bEl">
+                                <rect key="frame" x="16" y="193" width="343" height="474"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84W-pV-4wz">
+                                        <rect key="frame" x="8" y="149" width="327" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">1.	Rich in nutrients</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.70044582280191148" green="0.59449612764126369" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Bananas contain a fair amount of fiber and several antioxidants. One regular-sized banana (126 grams) also boasts:
+
+Calories: 112
+Fat: 0 grams
+Protein: 1 gram
+Carbs: 29 grams
+Fiber: 3 grams
+Vitamin C: 12% of the Daily Value (DV)
+Riboflavin: 7% of the DV
+Folate: 6% of the DV
+Niacin: 5% of the DV
+Copper: 11% of the DV
+Potassium: 10% of the DV
+Magnesium: 8% of the DV
+
+
+One banana provides about 112 calories and consists almost exclusively of water and carbs. They hold little protein and no fat.
+The carbs in green, unripe bananas are mostly in the form of starch and resistant starch — a type of indigestible fiber we’ll get to shortly. As the fruit ripens, its flavor becomes sweeter while its fiber content drops.
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.70044582280191148" green="0.59449612764126369" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" metaFont="system"/>
+                                                    <font key="NSOriginalFont" metaFont="system"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2. May improve blood sugar levels">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.70044582280191148" green="0.59449612764126369" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Bananas are rich in soluble fiber. During digestion, soluble fiber dissolves in liquid to form a gel. It’s also what gives bananas their sponge-like texture.
+Unripe bananas also contain resistant starch, which isn’t digested by your body.
+Together, these two types of fiber may moderate your blood sugar levels after meals. Plus, they may help regulate your appetite by slowing the emptying of your stomach.
+This means that despite their higher carb content, bananas won’t cause major spikes in blood sugar levels in healthy individuals. However, while people with diabetes can enjoy bananas, it’s not recommended to enjoy a large portion in one sitting.
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.70044582280191148" green="0.59449612764126369" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" metaFont="system"/>
+                                                    <font key="NSOriginalFont" metaFont="system"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="3. May support digestive health">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.70044582280191148" green="0.59449612764126369" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Dietary fiber has been linked to many health benefits, including improved digestion. One medium-sized banana provides about 3 grams of fiber (1Trusted Source).
+Resistant starch, the type of fiber found in unripe bananas, is a prebiotic. Prebiotics escape digestion and end up in your large intestine, where they become food for the beneficial bacteria in your gut (2Trusted Source, 5Trusted Source).
+What’s more, pectin — a fiber found in both ripe and unripe bananas — may help prevent constipation and soften stools (3Trusted Source, 6Trusted Source).
+Some test-tube studies even propose that pectin may help protect against colon cancer, although research in humans is still needed to confirm this benefit (7Trusted Source, 8Trusted Source).</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.70044582280191148" green="0.59449612764126369" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" metaFont="system"/>
+                                                    <font key="NSOriginalFont" metaFont="system"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+DQo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.70044582280191148" green="0.59449612764126369" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="PartyLetPlain"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Banana" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ids-UL-0GO">
+                                        <rect key="frame" x="32" y="34" width="128" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="Sa7-Pb-Eeq">
+                                        <rect key="frame" x="222" y="0.0" width="121" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV4-hw-7Hk">
+                                        <rect key="frame" x="8" y="401" width="114" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Memu"/>
+                                        <connections>
+                                            <segue destination="Y0H-v6-h2v" kind="presentation" id="V97-F0-u6Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0i-MI-4BD">
+                                <rect key="frame" x="16" y="0.0" width="343" height="193"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zw6-Xg-C7S">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="193"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zw6-Xg-C7S" secondAttribute="trailing" id="1Gn-mp-Vge"/>
+                                    <constraint firstItem="zw6-Xg-C7S" firstAttribute="leading" secondItem="f0i-MI-4BD" secondAttribute="leading" id="45S-hg-dYb"/>
+                                    <constraint firstItem="zw6-Xg-C7S" firstAttribute="top" secondItem="f0i-MI-4BD" secondAttribute="top" id="d9Q-dx-yI2"/>
+                                    <constraint firstAttribute="bottom" secondItem="zw6-Xg-C7S" secondAttribute="bottom" id="fK3-Rm-V4n"/>
+                                    <constraint firstAttribute="width" secondItem="f0i-MI-4BD" secondAttribute="height" multiplier="16:9" id="qWA-LW-gs2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f0i-MI-4BD" firstAttribute="top" secondItem="6vq-Q0-XkQ" secondAttribute="bottom" id="2zz-3k-n2d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lak-Rh-bEl" secondAttribute="trailing" id="3Qy-g3-83W"/>
+                            <constraint firstItem="f0i-MI-4BD" firstAttribute="leading" secondItem="1gs-AG-OYa" secondAttribute="leadingMargin" id="5Ry-rE-ck0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f0i-MI-4BD" secondAttribute="trailing" id="Bja-jd-bmq"/>
+                            <constraint firstItem="lak-Rh-bEl" firstAttribute="top" secondItem="f0i-MI-4BD" secondAttribute="bottom" id="C2D-Gm-jRA"/>
+                            <constraint firstItem="qC9-Bu-PHJ" firstAttribute="top" secondItem="lak-Rh-bEl" secondAttribute="bottom" id="g5B-nh-Y9b"/>
+                            <constraint firstItem="lak-Rh-bEl" firstAttribute="leading" secondItem="1gs-AG-OYa" secondAttribute="leadingMargin" id="hby-5x-ySb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="zw6-Xg-C7S" id="WxD-gf-l0X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qlj-eW-Ern" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2247.1999999999998" y="718.29085457271367"/>
+        </scene>
+        <!--Vision Object Recognition View Controller-->
+        <scene sceneID="kGf-FR-Eqv">
+            <objects>
+                <viewController id="Guf-hf-AUD" customClass="VisionObjectRecognitionViewController" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C4p-Ut-auy"/>
+                        <viewControllerLayoutGuide type="bottom" id="w3T-8m-aeW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aeh-cw-xqy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="Aeh-cw-xqy" id="Q6I-Px-e8x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRI-0s-6Ch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-481" y="-886"/>
+        </scene>
+        <!--Your Meals-->
+        <scene sceneID="OYx-yR-mCZ">
+            <objects>
+                <tableViewController id="Wvu-yz-Ban" customClass="MealTableViewController" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="cz3-KO-b4I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="90" id="37q-yN-8WM" customClass="MealTableViewCell" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="37q-yN-8WM" id="ikr-MO-C0W">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="v0g-u1-O18">
+                                            <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRe-mR-pqs">
+                                            <rect key="frame" x="97" y="8" width="270" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CE9-7Y-rKM" customClass="RatingControl" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target">
+                                            <rect key="frame" x="97" y="37" width="252" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </stackView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="VRe-mR-pqs" id="KDd-nc-wEu"/>
+                                    <outlet property="photoImageView" destination="v0g-u1-O18" id="EmQ-6a-sAg"/>
+                                    <outlet property="ratingControl" destination="CE9-7Y-rKM" id="rlC-r1-H5q"/>
+                                    <segue destination="fmi-6f-O88" kind="show" identifier="ShowDetail" id="ec5-Hn-WaN"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wvu-yz-Ban" id="2kt-qB-0E3"/>
+                            <outlet property="delegate" destination="Wvu-yz-Ban" id="vU9-OI-Dqy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Your Meals" id="dwf-zr-xhr">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="2UK-Oq-BkG">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="m1P-Lj-bx7">
+                                <rect key="frame" x="16" y="10.5" width="83" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <connections>
+                                <segue destination="Y0H-v6-h2v" kind="presentation" id="7oG-Ov-B1J"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="L6F-mc-i9j">
+                            <connections>
+                                <segue destination="FUa-MK-lbG" kind="presentation" identifier="AddItem" id="YRd-qn-QhE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YW7-32-Btq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="-151"/>
+        </scene>
+        <!--New Meal-->
+        <scene sceneID="78l-eH-h1e">
+            <objects>
+                <viewController id="fmi-6f-O88" customClass="MealViewController" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mnp-UR-GaZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OOw-nz-eA0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VkN-pK-NWc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gxg-Pd-wr8">
+                                <rect key="frame" x="16" y="76" width="343" height="414"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L7E-vj-zEt">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="LCe-40-t5b">
+                                        <rect key="frame" x="11.5" y="42" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LCe-40-t5b" secondAttribute="height" multiplier="1:1" id="fed-cw-kn1"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Zvj-dW-hUj" appends="YES" id="saV-L9-bmG"/>
+                                        </connections>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bYU-X4-Mhb" customClass="RatingControl" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target">
+                                        <rect key="frame" x="45.5" y="370" width="252" height="44"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="L7E-vj-zEt" secondAttribute="trailing" id="BTq-wy-Dji"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gxg-Pd-wr8" firstAttribute="top" secondItem="Mnp-UR-GaZ" secondAttribute="bottom" constant="20" id="Kow-qq-GMn"/>
+                            <constraint firstItem="Gxg-Pd-wr8" firstAttribute="leading" secondItem="VkN-pK-NWc" secondAttribute="leadingMargin" id="WLw-oX-ZAP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gxg-Pd-wr8" secondAttribute="trailing" id="bS2-wJ-hrQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Meal" id="aSz-IF-K8U">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Gel-sF-tnu">
+                            <connections>
+                                <action selector="cancel:" destination="fmi-6f-O88" id="bIb-Rv-0oq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Dj0-7g-n1K">
+                            <connections>
+                                <segue destination="ko3-Q6-Irq" kind="unwind" unwindAction="unwindToMealListWithSender:" id="cTV-Zw-jUE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="L7E-vj-zEt" id="B93-cD-G2A"/>
+                        <outlet property="photoImageView" destination="LCe-40-t5b" id="xkl-Sp-iPi"/>
+                        <outlet property="ratingControl" destination="bYU-X4-Mhb" id="86V-px-0l2"/>
+                        <outlet property="saveButton" destination="Dj0-7g-n1K" id="aAu-DZ-UrR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIs-Ss-cN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ko3-Q6-Irq" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="Zvj-dW-hUj">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="fmi-6f-O88" id="DYS-YZ-RkJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2516" y="-151"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L6R-le-2On">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X17-WH-DtB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4HN-c6-cfH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wvu-yz-Ban" kind="relationship" relationship="rootViewController" id="CtY-Gs-t1I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="26J-yL-oGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="-150"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OHB-KY-mXj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FUa-MK-lbG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zx1-jT-ouQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fmi-6f-O88" kind="relationship" relationship="rootViewController" id="ukC-Z5-yzS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Og-aK-9PO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="-151"/>
+        </scene>
+        <!--Orange-->
+        <scene sceneID="dHa-uM-6js">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="RAi-zS-4Sc" customClass="Orange" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nA9-p4-VLP"/>
+                        <viewControllerLayoutGuide type="bottom" id="YQH-Eb-Cph"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kqb-Y5-bX6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="403-Bf-ylD">
+                                <rect key="frame" x="16" y="193" width="343" height="474"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0I5-1q-N3i">
+                                        <rect key="frame" x="8" y="149" width="327" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Calories- 47
+Total Carbohydrate -11.75g
+Dietary Fiber- 2.40g 6% RDI
+Potassium- 169mg 3.5% RDI
+Vitamin A – 7.5%RDI
+Vitamin C- 90% RDI
+Iron- 1% RDI
+Calcium- 4% RDI
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.37830577874184357" blue="0.12848875040048835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="1. Protects The Eyes And Improves Vision">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.37830577874184357" blue="0.12848875040048835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Eating foods rich in Vitamin A can contribute to maintaining healthy eyes. Oranges are a decent source of Vitamin A, which along with other bioflavonoid compounds help to protect the eyes from macular degeneration, cataracts and even blindness due to deterioration of vision. When oranges are added to the diet, they can offer adequate protection to the membranes lining the eyes and may be useful in promoting vision and maintaining eye health for years.
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.37830577874184357" blue="0.12848875040048835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2. Enhances Sexual Performance">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.37830577874184357" blue="0.12848875040048835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Oranges may have mild aphrodisiac properties which can be used to enhance sexual performance in both males and females. When used regularly, it may be able to put a stop to sexual problems like erectile dysfunction and decreased libido from affecting your sex life. Oranges may also increase the secretion of the sex hormones and improve sex drive and erection potency, all playing favorably to enhancing sex life.
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.37830577874184357" blue="0.12848875040048835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="3. Prevents Constipation">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.37830577874184357" blue="0.12848875040048835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Constipation occurs when there is difficulty in passing stool due to irregular bowel movements, or hardening of fecal matter due to inadequate water intake. The fiber found in Oranges make it effective in preventing and providing relief from constipation. Water is also necessary to prevent constipation, which luckily, has high water content and makes the passage of stool an easy and routine process.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.37830577874184357" blue="0.12848875040048835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.37830577874184357" blue="0.12848875040048835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="ToppanBunkyuMinchoPr6N-Regular"/>
+                                                    <font key="NSOriginalFont" size="18" name="ToppanBunkyuMinchoPr6N-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Orange" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f7L-HF-llK">
+                                        <rect key="frame" x="32" y="34" width="128" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orange" translatesAutoresizingMaskIntoConstraints="NO" id="wL6-8q-cU8">
+                                        <rect key="frame" x="203" y="8" width="121" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdn-E3-YHm">
+                                        <rect key="frame" x="8" y="401" width="109" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Menu"/>
+                                        <connections>
+                                            <segue destination="Y0H-v6-h2v" kind="presentation" id="yvx-3N-GMR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RF-tj-PzH">
+                                <rect key="frame" x="16" y="0.0" width="343" height="193"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGE-CW-Z8z">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="193"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="LGE-CW-Z8z" firstAttribute="leading" secondItem="8RF-tj-PzH" secondAttribute="leading" id="2wp-U9-Kyx"/>
+                                    <constraint firstAttribute="bottom" secondItem="LGE-CW-Z8z" secondAttribute="bottom" id="Nyh-Ul-buJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="LGE-CW-Z8z" secondAttribute="trailing" id="ehp-QJ-Zna"/>
+                                    <constraint firstAttribute="width" secondItem="8RF-tj-PzH" secondAttribute="height" multiplier="16:9" id="jjd-dd-82q"/>
+                                    <constraint firstItem="LGE-CW-Z8z" firstAttribute="top" secondItem="8RF-tj-PzH" secondAttribute="top" id="yTx-i3-aTr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="403-Bf-ylD" secondAttribute="trailing" id="0sM-sk-Ajf"/>
+                            <constraint firstItem="8RF-tj-PzH" firstAttribute="leading" secondItem="Kqb-Y5-bX6" secondAttribute="leadingMargin" id="14C-Gy-N6J"/>
+                            <constraint firstItem="403-Bf-ylD" firstAttribute="leading" secondItem="Kqb-Y5-bX6" secondAttribute="leadingMargin" id="1Qi-ad-faU"/>
+                            <constraint firstItem="8RF-tj-PzH" firstAttribute="top" secondItem="nA9-p4-VLP" secondAttribute="bottom" id="7Uf-2Y-UY2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8RF-tj-PzH" secondAttribute="trailing" id="KrE-xQ-m8e"/>
+                            <constraint firstItem="403-Bf-ylD" firstAttribute="top" secondItem="8RF-tj-PzH" secondAttribute="bottom" id="WWU-q4-cSy"/>
+                            <constraint firstItem="YQH-Eb-Cph" firstAttribute="top" secondItem="403-Bf-ylD" secondAttribute="bottom" id="tPB-eR-7OG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="LGE-CW-Z8z" id="3uE-Yl-Wgf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRW-Vs-tFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1375" y="718"/>
+        </scene>
+        <!--Carrot-->
+        <scene sceneID="RaO-wZ-quG">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="dxO-5I-mL8" customClass="Carrot" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pe9-0s-6rj"/>
+                        <viewControllerLayoutGuide type="bottom" id="es5-jP-wHS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BcW-ww-VB6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6SU-Ts-Aa8">
+                                <rect key="frame" x="16" y="193" width="343" height="474"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jt3-R6-aB7">
+                                        <rect key="frame" x="8" y="149" width="327" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">An 80g serving of carrots (raw) provides:
+
+27kcals/117KJ
+0.4g protein
+0.3g fat
+6.2g carbohydrates
+3.1g fibre
+142mg potassium
+2mg vitamin C
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.51273621234697164" green="0.23123752208906179" blue="0.055442894385773711" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="1. Rich source of dietary carotenoids">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.51273621234697164" green="0.23123752208906179" blue="0.055442894385773711" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+As their name suggests, carrots are rich in plant compounds called carotenoids – these compounds accumulate in the root, the part we most enjoy eating. About 80 per cent of the carotenes in carrots are a type called beta-carotene, and are often referred to as pro-vitamin A because we convert them to vitamin A in our intestines. The majority of these carotenoids are in the flesh or outer section of the root, rather than the core. Carotenoids play an important role in eyesight – the old wives' tale of eating carrots to help see in the dark has more than an element of truth in it.
+Carotenoids also help maintain a well-functioning immune system, are important for our skin and healthy ageing, and support our mucosal membranes in important areas like the respiratory system.
+Interestingly, when we cook carrots by roasting, baking, griddling or microwaving we can improve, or at the very least maintain, their carotenoid content. Puréed and enjoyed with a little fat or oil and you’ll increase your ability to absorb the pro-vitamin A content even more.
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.51273621234697164" green="0.23123752208906179" blue="0.055442894385773711" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2. May support cholesterol balance and heart health">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.51273621234697164" green="0.23123752208906179" blue="0.055442894385773711" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Carrots are a source of fibre as well as vitamin C, which contribute to their heart protective properties. Carrots also appear to help modify cholesterol absorption and may improve cholesterol balance as a result.
+However, much of this evidence is derived from animal studies and more human trials are needed before a heart benefits can be confirmed.
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.51273621234697164" green="0.23123752208906179" blue="0.055442894385773711" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="3. May help with weight loss goals">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.51273621234697164" green="0.23123752208906179" blue="0.055442894385773711" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Low in calories and a good source of fibre, research suggests that including vegetables, like carrots, in your diet helps increase fullness and a sense of satiation. Nevertheless, some weight loss plans, like the very low-carb diet plans, advise avoiding carrots because they contribute more in the way of simple carbs. This approach ignores the other health benefits of carrots and the fact that, when eaten in whole form, the structure, fibre and high water content of carrots helps curb appetite. Their natural sweetness may also be helpful in reducing other sugars in the diet.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.51273621234697164" green="0.23123752208906179" blue="0.055442894385773711" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Carrot" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jxR-Ja-gQD">
+                                        <rect key="frame" x="32" y="34" width="128" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carrot" translatesAutoresizingMaskIntoConstraints="NO" id="Oqh-YI-p13">
+                                        <rect key="frame" x="203" y="8" width="121" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOD-r4-XRC">
+                                        <rect key="frame" x="0.0" y="398" width="109" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Menu"/>
+                                        <connections>
+                                            <segue destination="Y0H-v6-h2v" kind="presentation" id="gZT-J9-hbi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4VI-pB-ntN">
+                                <rect key="frame" x="16" y="0.0" width="343" height="193"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7NL-G5-QCM">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="193"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7NL-G5-QCM" firstAttribute="top" secondItem="4VI-pB-ntN" secondAttribute="top" id="INY-FU-8A2"/>
+                                    <constraint firstAttribute="bottom" secondItem="7NL-G5-QCM" secondAttribute="bottom" id="JM6-Eh-9lc"/>
+                                    <constraint firstAttribute="trailing" secondItem="7NL-G5-QCM" secondAttribute="trailing" id="TUA-g5-cw6"/>
+                                    <constraint firstItem="7NL-G5-QCM" firstAttribute="leading" secondItem="4VI-pB-ntN" secondAttribute="leading" id="Yhv-EZ-Eg3"/>
+                                    <constraint firstAttribute="width" secondItem="4VI-pB-ntN" secondAttribute="height" multiplier="16:9" id="lvQ-Td-gh8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4VI-pB-ntN" firstAttribute="top" secondItem="pe9-0s-6rj" secondAttribute="bottom" id="2od-zl-AQ7"/>
+                            <constraint firstItem="4VI-pB-ntN" firstAttribute="leading" secondItem="BcW-ww-VB6" secondAttribute="leadingMargin" id="5YF-rN-WXp"/>
+                            <constraint firstItem="es5-jP-wHS" firstAttribute="top" secondItem="6SU-Ts-Aa8" secondAttribute="bottom" id="EJj-mk-rRJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6SU-Ts-Aa8" secondAttribute="trailing" id="FNa-nB-W8s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4VI-pB-ntN" secondAttribute="trailing" id="FiS-xq-6KK"/>
+                            <constraint firstItem="6SU-Ts-Aa8" firstAttribute="top" secondItem="4VI-pB-ntN" secondAttribute="bottom" id="TTX-Tz-tDA"/>
+                            <constraint firstItem="6SU-Ts-Aa8" firstAttribute="leading" secondItem="BcW-ww-VB6" secondAttribute="leadingMargin" id="i8M-i2-GUK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="7NL-G5-QCM" id="sW4-6X-0Dw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIc-6O-8XQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586" y="717"/>
+        </scene>
+        <!--Citrus-->
+        <scene sceneID="ekp-WK-zGL">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="EUO-JW-idw" customClass="Citrus" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PtU-AQ-nzU"/>
+                        <viewControllerLayoutGuide type="bottom" id="oFN-xf-pQu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UtI-8G-k0W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRK-Ku-LBz">
+                                <rect key="frame" x="16" y="193" width="343" height="474"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gza-fS-vlh">
+                                        <rect key="frame" x="8" y="149" width="327" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">A single lime has similar nutrients:
+•	Calories: 20
+•	Protein: 0.4 gram
+•	Fat: 0 grams 
+•	Carbohydrates: 7 grams
+•	Fiber: 2 grams
+•	Sugar: 1 gram
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.43161521990274643" green="0.17231999272533885" blue="0.323120812850276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="1. They’re Rich in Vitamins and Plant Compounds">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.43161521990274643" green="0.17231999272533885" blue="0.323120812850276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Citrus fruits are an excellent source of vitamin C, a nutrient that strengthens the immune system and keeps your skin smooth and elastic (2Trusted Source, 3Trusted Source, 4Trusted Source, 5Trusted Source).
+In fact, just one medium orange has all the vitamin C you need in a day (6).
+Citrus fruits also have good amounts of other vitamins and minerals that your body needs to function properly, including B vitamins, potassium, phosphorous, magnesium and copper (7Trusted Source).
+Additionally, they are rich in plant compounds that have various health benefits, including anti-inflammatory and antioxidant effects.
+These compounds include over 60 varieties of flavonoids, carotenoids and essential oils, and they are responsible for many of citrus fruit’s health benefits
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.43161521990274643" green="0.17231999272533885" blue="0.323120812850276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2. They’re a Good Source of Fiber">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.43161521990274643" green="0.17231999272533885" blue="0.323120812850276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Citrus fruits are a good source of fiber. Just one cup of orange segments contains four grams of fiber (6).
+To put that in perspective, it’s recommended that you consume 14 grams of fiber for every 1,000 calories you eat. It’s estimated that only 4% of men and 13% of women in the US get that amount (9Trusted Source).
+Fiber has several health benefits, including improving digestive health and aiding weight loss.
+Oranges are particularly high in soluble fiber, the kind of fiber that helps lower cholesterol levels (10Trusted Source).
+Compared to other fruits and vegetables, citrus fruits are unique in that they have a higher ratio of soluble to insoluble fiber (11Trusted Source).
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.43161521990274643" green="0.17231999272533885" blue="0.323120812850276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="3. Citrus Fruits Are Low in Calories">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.43161521990274643" green="0.17231999272533885" blue="0.323120812850276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+If you’re watching your calorie intake, citrus fruits are a good choice.
+They’re low in calories, yet their water and fiber contents help fill you up.
+Here’s how many calories the main kinds of citrus fruits contain.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.43161521990274643" green="0.17231999272533885" blue="0.323120812850276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Citrus" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="db9-i1-ahD">
+                                        <rect key="frame" x="32" y="34" width="128" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Citrus" translatesAutoresizingMaskIntoConstraints="NO" id="hiM-gr-l2Q">
+                                        <rect key="frame" x="203" y="8" width="121" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u33-f1-kEH">
+                                        <rect key="frame" x="0.0" y="398" width="109" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Menu"/>
+                                        <connections>
+                                            <segue destination="Y0H-v6-h2v" kind="presentation" id="lv8-Fg-Htz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIG-13-6QI">
+                                <rect key="frame" x="16" y="0.0" width="343" height="193"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4UZ-pg-5q4">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="193"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aIG-13-6QI" secondAttribute="height" multiplier="16:9" id="A0K-gL-MSr"/>
+                                    <constraint firstItem="4UZ-pg-5q4" firstAttribute="top" secondItem="aIG-13-6QI" secondAttribute="top" id="Lsw-pb-9Fr"/>
+                                    <constraint firstItem="4UZ-pg-5q4" firstAttribute="leading" secondItem="aIG-13-6QI" secondAttribute="leading" id="RfR-go-dbg"/>
+                                    <constraint firstAttribute="trailing" secondItem="4UZ-pg-5q4" secondAttribute="trailing" id="r9V-Bf-zGq"/>
+                                    <constraint firstAttribute="bottom" secondItem="4UZ-pg-5q4" secondAttribute="bottom" id="wyz-jY-kBS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aIG-13-6QI" firstAttribute="leading" secondItem="UtI-8G-k0W" secondAttribute="leadingMargin" id="FYM-zv-kWt"/>
+                            <constraint firstItem="rRK-Ku-LBz" firstAttribute="top" secondItem="aIG-13-6QI" secondAttribute="bottom" id="Hg6-CF-5By"/>
+                            <constraint firstItem="oFN-xf-pQu" firstAttribute="top" secondItem="rRK-Ku-LBz" secondAttribute="bottom" id="R4d-AN-daW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rRK-Ku-LBz" secondAttribute="trailing" id="eHh-Gj-k4f"/>
+                            <constraint firstItem="aIG-13-6QI" firstAttribute="top" secondItem="PtU-AQ-nzU" secondAttribute="bottom" id="hnp-Gb-fuz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aIG-13-6QI" secondAttribute="trailing" id="rCR-Qh-RYI"/>
+                            <constraint firstItem="rRK-Ku-LBz" firstAttribute="leading" secondItem="UtI-8G-k0W" secondAttribute="leadingMargin" id="z13-k9-ghT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="4UZ-pg-5q4" id="ctz-5L-saI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRV-ey-Bkz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="716"/>
+        </scene>
+        <!--Egg-->
+        <scene sceneID="WA8-HO-le7">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="HHf-oq-FLk" customClass="Egg" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I8M-K0-CI2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cuk-Qe-RFk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b3e-RH-qtd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMc-ZF-NdE">
+                                <rect key="frame" x="16" y="193" width="343" height="474"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ID-c3-agN">
+                                        <rect key="frame" x="8" y="149" width="327" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">•	Energy: 62.5 calories
+•	Protein 5.5 grams (g)
+•	Total fat: 4.2 g, of which 1.4 g are saturated
+•	Sodium: 189 milligrams (mg)
+•	Calcium: 24.6 mg
+•	Iron: 0.8 mg
+•	Magnesium 5.3 mg
+•	Phosphorus: 86.7 mg
+•	Potassium: 60.3 mg
+•	Zinc: 0.6 mg
+•	Cholesterol: 162 mg
+•	Selenium: 13.4 micrograms (mcg)
+•	Lutein and zeaxanthin: 220 mcg
+•	Folate: 15.4 mcg
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13087347999710094" green="0.3404154826685325" blue="0.30387752432136167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="1. High in cholesterol, but don’t adversely affect blood cholesterol">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13087347999710094" green="0.3404154826685325" blue="0.30387752432136167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+It is true that eggs are high in cholesterol. In fact, a single egg contains 186 mg.
+However, it’s important to keep in mind that cholesterol in the diet may not necessarily have an impact on blood cholesterol levels or risk of heart disease.
+The liver actually produces large amounts of cholesterol every single day. In fact, when you eat more cholesterol, your liver has the ability to regulate cholesterol levels by producing less to even it out.
+Nevertheless, the response to eating eggs varies between individuals:
+•	In 70% of people, eating cholesterol may not raise blood cholesterol or only mildly raise it (termed “hypo responders”)
+•	In the other 30% of the population (termed “hyper responders”), eggs or other sources of dietary cholesterol may lead to a large rise in blood cholesterol
+However, people with genetic disorders like familial hypercholesterolemia or carriers of a gene variant called APOE4 may want to consider eating eggs in moderation.
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13087347999710094" green="0.3404154826685325" blue="0.30387752432136167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2. Raise HDL (the “good”) cholesterol">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13087347999710094" green="0.3404154826685325" blue="0.30387752432136167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+HDL stands for high-density lipoprotein. It is often known as the “good” cholesterol.
+People who have higher levels of HDL usually have a lower risk of heart disease, stroke and other health problems.
+Eating eggs is a great way to increase HDL. In one study, eating 1-3 eggs daily for four weeks increased HDL levels by 6-13% in young, healthy adults.
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13087347999710094" green="0.3404154826685325" blue="0.30387752432136167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="3. Contain choline — an important nutrient that most people don’t get enough of">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13087347999710094" green="0.3404154826685325" blue="0.30387752432136167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Choline is a nutrient that most people don’t even know exists, yet it is an incredibly important substance and is often grouped with the B vitamins.
+Choline is used to build cell membranes and has a role in producing signaling molecules in the brain, along with various other functions.
+The symptoms of choline deficiency are serious, so fortunately it’s rare in most healthy, non-pregnant people, mainly because the body makes choline.
+Whole eggs are an excellent source of choline. A single egg contains more than 100 mg of this very important nutrient.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13087347999710094" green="0.3404154826685325" blue="0.30387752432136167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Egg" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vQB-a1-pcv">
+                                        <rect key="frame" x="32" y="34" width="128" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egg" translatesAutoresizingMaskIntoConstraints="NO" id="hRp-BB-rpo">
+                                        <rect key="frame" x="203" y="8" width="121" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwU-pf-Q59">
+                                        <rect key="frame" x="0.0" y="402" width="109" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Menu"/>
+                                        <connections>
+                                            <segue destination="Y0H-v6-h2v" kind="presentation" id="R8F-3U-RDI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lz5-t4-Gvc">
+                                <rect key="frame" x="16" y="0.0" width="343" height="193"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h35-hn-sa1">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="193"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="h35-hn-sa1" firstAttribute="leading" secondItem="lz5-t4-Gvc" secondAttribute="leading" id="FiG-LP-yho"/>
+                                    <constraint firstItem="h35-hn-sa1" firstAttribute="top" secondItem="lz5-t4-Gvc" secondAttribute="top" id="Roh-MB-tP1"/>
+                                    <constraint firstAttribute="bottom" secondItem="h35-hn-sa1" secondAttribute="bottom" id="VuV-ga-daE"/>
+                                    <constraint firstAttribute="trailing" secondItem="h35-hn-sa1" secondAttribute="trailing" id="bAa-2T-P05"/>
+                                    <constraint firstAttribute="width" secondItem="lz5-t4-Gvc" secondAttribute="height" multiplier="16:9" id="xhx-g0-ph6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lz5-t4-Gvc" firstAttribute="top" secondItem="I8M-K0-CI2" secondAttribute="bottom" id="6Eh-Ex-YJK"/>
+                            <constraint firstItem="OMc-ZF-NdE" firstAttribute="leading" secondItem="b3e-RH-qtd" secondAttribute="leadingMargin" id="OQ5-Iz-CN9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OMc-ZF-NdE" secondAttribute="trailing" id="Zg5-BP-tWb"/>
+                            <constraint firstItem="OMc-ZF-NdE" firstAttribute="top" secondItem="lz5-t4-Gvc" secondAttribute="bottom" id="eTw-C9-hA6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lz5-t4-Gvc" secondAttribute="trailing" id="orw-P3-d9Y"/>
+                            <constraint firstItem="Cuk-Qe-RFk" firstAttribute="top" secondItem="OMc-ZF-NdE" secondAttribute="bottom" id="p2T-u2-unC"/>
+                            <constraint firstItem="lz5-t4-Gvc" firstAttribute="leading" secondItem="b3e-RH-qtd" secondAttribute="leadingMargin" id="tfd-4L-f1u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="h35-hn-sa1" id="Inc-zC-3NB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="26q-Ly-2Qu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="716"/>
+        </scene>
+        <!--Lemon-->
+        <scene sceneID="ENM-7x-4TT">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Lp9-Yf-6if" customClass="Lemon" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lG4-HD-dGh"/>
+                        <viewControllerLayoutGuide type="bottom" id="fXF-7F-krC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b9f-zj-xkc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A70-ag-Ai0">
+                                <rect key="frame" x="16" y="193" width="343" height="474"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TN7-KJ-3cZ">
+                                        <rect key="frame" x="8" y="149" width="327" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">•	Calories: 31
+•	Protein: 1 gram
+•	Fat: 0 grams
+•	Carbohydrates: 10 grams
+•	Fiber: 3 grams
+•	Sugar: 3 grams 
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="1. Support Heart Health">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Lemons are a good source of vitamin C.
+One lemon provides about 31 mg of vitamin C, which is 51% of the reference daily intake (RDI).
+Research shows that eating fruits and vegetables rich in vitamin C reduces your risk of heart disease and stroke.
+However, it’s not only the vitamin C that is thought to be good for your heart. The fiber and plant compounds in lemons could also significantly lower some risk factors for heart disease.
+For instance, one study revealed that eating 24 grams of citrus fiber extract daily for a month reduced total blood cholesterol levels (6).
+Plant compounds found in lemons — namely hesperidin and diosmin — have also been found to lower cholesterol .</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2. Help Control Weight">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Lemons are often promoted as a weight loss food, and there are a few theories as to why this is.
+One common theory is that the soluble pectin fiber in them expands in your stomach, helping you feel full for longer.
+That said, not many people eat lemons whole. And because lemon juice contains no pectin, lemon juice drinks will not promote fullness in the same way.
+Another theory suggests that drinking hot water with lemon will help you lose weight.
+However, drinking water is known to temporarily increase the number of calories you burn, so it may be the water itself that is helping with weight loss — not the lemon.
+Other theories suggest that the plant compounds in lemons may aid weight loss.
+Research shows that plant compounds in lemon extracts may help prevent or reduce weight gain in a number of ways.
+In one study, mice on a fattening diet were given lemon polyphenols extracted from the peel. They gained less weight and body fat than other mice.
+However, no studies confirm the weight loss effects of lemon compounds in humans.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="3. Prevent Kidney Stones">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Kidney stones are small lumps that form when waste products crystallize and build up in your kidneys.
+They are quite common, and people who get them often get them repeatedly.
+Citric acid may help prevent kidney stones by increasing urine volume and increasing urine pH, creating a less favorable environment for kidney stone formation.
+Just a 1/2-cup (4 ounces or 125 ml) of lemon juice per day may provide enough citric acid to help prevent stone formation in people who have already had them.
+Some studies also found that lemonade effectively prevented kidney stones, but the results have been mixed. Other studies have shown no effect.
+Therefore, more well-conducted studies need to examine whether lemon juice affects kidney stone formation.
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.38475807425902064" green="0.34724958937103817" blue="0.02827974381889917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lemon" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zGt-b8-F4k">
+                                        <rect key="frame" x="32" y="34" width="128" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lemon" translatesAutoresizingMaskIntoConstraints="NO" id="MXe-Ju-xwK">
+                                        <rect key="frame" x="203" y="8" width="121" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c3-Pu-ksI">
+                                        <rect key="frame" x="0.0" y="402" width="109" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Menu"/>
+                                        <connections>
+                                            <segue destination="Y0H-v6-h2v" kind="presentation" id="jjy-7d-KNt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9q-7V-rcD">
+                                <rect key="frame" x="16" y="0.0" width="343" height="193"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVd-dS-jQf">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="193"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L9q-7V-rcD" secondAttribute="height" multiplier="16:9" id="1tB-gD-15o"/>
+                                    <constraint firstItem="jVd-dS-jQf" firstAttribute="top" secondItem="L9q-7V-rcD" secondAttribute="top" id="Lq5-zi-GNP"/>
+                                    <constraint firstAttribute="trailing" secondItem="jVd-dS-jQf" secondAttribute="trailing" id="YLJ-N8-Z2m"/>
+                                    <constraint firstItem="jVd-dS-jQf" firstAttribute="leading" secondItem="L9q-7V-rcD" secondAttribute="leading" id="cVG-dR-V42"/>
+                                    <constraint firstAttribute="bottom" secondItem="jVd-dS-jQf" secondAttribute="bottom" id="egX-RW-t9G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="L9q-7V-rcD" secondAttribute="trailing" id="5qh-MM-TDL"/>
+                            <constraint firstItem="A70-ag-Ai0" firstAttribute="leading" secondItem="b9f-zj-xkc" secondAttribute="leadingMargin" id="GvS-03-7aL"/>
+                            <constraint firstItem="A70-ag-Ai0" firstAttribute="top" secondItem="L9q-7V-rcD" secondAttribute="bottom" id="InY-Mn-TWJ"/>
+                            <constraint firstItem="L9q-7V-rcD" firstAttribute="top" secondItem="lG4-HD-dGh" secondAttribute="bottom" id="TXG-aU-yCT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A70-ag-Ai0" secondAttribute="trailing" id="fa2-2c-YhX"/>
+                            <constraint firstItem="fXF-7F-krC" firstAttribute="top" secondItem="A70-ag-Ai0" secondAttribute="bottom" id="llS-Zc-ngN"/>
+                            <constraint firstItem="L9q-7V-rcD" firstAttribute="leading" secondItem="b9f-zj-xkc" secondAttribute="leadingMargin" id="qmg-DF-AK5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="jVd-dS-jQf" id="aUn-Z3-roR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzC-52-0TS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="717"/>
+        </scene>
+        <!--Strawberry-->
+        <scene sceneID="T3S-s2-NDn">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="9HL-Og-aGO" customClass="Strawberry" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HDO-RG-tSN"/>
+                        <viewControllerLayoutGuide type="bottom" id="CyD-ia-SLE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7a4-3S-K2X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oh4-LZ-m3C">
+                                <rect key="frame" x="16" y="193" width="343" height="474"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpb-Iw-1FN">
+                                        <rect key="frame" x="8" y="149" width="327" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Total Fat 0 g
+Saturated Fat 0 g
+Trans Fat 0 g
+Cholesterol 0 mg
+Sodium 1 mg
+Potassium 0 mg
+Total Carbohydrate 6 g
+Dietary Fiber 1 g
+Sugar 4 g
+Protein 0 g
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">1.	Calories in a Strawberry</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+According to the USDA, a 100 g serving of raw strawberries contains about 32 calories. This makes them a low-calorie food. You can eat these without worrying about any unhealthy weight gain. </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">2.	Health Benefits of Strawberry</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Let’s look at the most popular health benefits of strawberries in detail below.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Strawberries have possibly high levels of heart-healthy antioxidants such as ellagic acid and flavonoids like anthocyanin, catechin, quercetin, and kaempferol. According to one research, these phenolic compounds help lower the risk of cardiovascular diseases by inhibiting the formation of total and LDL (bad) cholesterol.
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">3.	May Improve Heart Function</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <font key="NSOriginalFont" size="36" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Another Harvard Medical School study found that young and middle-aged women who had three or more servings of a half cup of strawberries or blueberries weekly were 34 percent less likely to have a heart attack. The possibly high levels of anthocyanins in the berries relax the blood vessels, helping lower blood pressure, and preventing cardiovascular problems. The high fiber content, vitamin C, and folate in strawberries form an ideal cardiac health trio. They can reduce the cholesterol in the arteries and vessels.  
+
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45442144649544947" green="0.22704620509176182" blue="0.27380171906229456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                    <font key="NSOriginalFont" size="13" name="Palatino-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Strawberry" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1GF-CO-Yxc">
+                                        <rect key="frame" x="32" y="34" width="163" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Strawberry" translatesAutoresizingMaskIntoConstraints="NO" id="icG-z2-MRh">
+                                        <rect key="frame" x="203" y="8" width="121" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdQ-kn-Ywe">
+                                        <rect key="frame" x="0.0" y="402" width="109" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Menu"/>
+                                        <connections>
+                                            <segue destination="Y0H-v6-h2v" kind="presentation" id="vis-aW-qtG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHa-Vy-lsw">
+                                <rect key="frame" x="16" y="0.0" width="343" height="193"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wv7-Fy-9MH">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="193"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nHa-Vy-lsw" secondAttribute="height" multiplier="16:9" id="0v5-lp-ozQ"/>
+                                    <constraint firstItem="wv7-Fy-9MH" firstAttribute="top" secondItem="nHa-Vy-lsw" secondAttribute="top" id="H7y-vi-c22"/>
+                                    <constraint firstItem="wv7-Fy-9MH" firstAttribute="leading" secondItem="nHa-Vy-lsw" secondAttribute="leading" id="PKx-fZ-wjV"/>
+                                    <constraint firstAttribute="trailing" secondItem="wv7-Fy-9MH" secondAttribute="trailing" id="dgB-IO-pVH"/>
+                                    <constraint firstAttribute="bottom" secondItem="wv7-Fy-9MH" secondAttribute="bottom" id="qcK-vr-4KM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="nHa-Vy-lsw" secondAttribute="trailing" id="Edo-H7-4Fk"/>
+                            <constraint firstItem="oh4-LZ-m3C" firstAttribute="top" secondItem="nHa-Vy-lsw" secondAttribute="bottom" id="OWd-t4-GwH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oh4-LZ-m3C" secondAttribute="trailing" id="X50-FR-zZK"/>
+                            <constraint firstItem="nHa-Vy-lsw" firstAttribute="top" secondItem="HDO-RG-tSN" secondAttribute="bottom" id="a1X-DS-1TD"/>
+                            <constraint firstItem="CyD-ia-SLE" firstAttribute="top" secondItem="oh4-LZ-m3C" secondAttribute="bottom" id="acn-57-ozj"/>
+                            <constraint firstItem="nHa-Vy-lsw" firstAttribute="leading" secondItem="7a4-3S-K2X" secondAttribute="leadingMargin" id="udP-NE-gwR"/>
+                            <constraint firstItem="oh4-LZ-m3C" firstAttribute="leading" secondItem="7a4-3S-K2X" secondAttribute="leadingMargin" id="zlZ-Tg-nNW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="wv7-Fy-9MH" id="sJw-xE-RTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PcX-SQ-2Gn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2656.8000000000002" y="717.39130434782612"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eR5-R3-btX">
+            <objects>
+                <navigationController id="AFS-aC-WwG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9wd-6R-jbF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y70-Nu-vhE" kind="relationship" relationship="rootViewController" id="RLY-pJ-Szo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0y-CV-z7j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2247" y="-885"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F9W-R9-mvC">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Y70-Nu-vhE" customClass="ViewController" customModule="ITP4206_Food_Intake_Recorder_Project_Ming_Darius_Felix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P2A-ET-Ktu"/>
+                        <viewControllerLayoutGuide type="bottom" id="HFI-L2-UJM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pks-uC-SKq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkz-cF-al1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRB-hs-ghh">
+                                <rect key="frame" x="150" y="552" width="75" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pRB-hs-ghh" secondAttribute="height" multiplier="1:1" id="DEj-bb-XUn"/>
+                                    <constraint firstAttribute="width" constant="75" id="FER-Se-vKP"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="onTapTakePhoto:" destination="Y70-Nu-vhE" eventType="touchUpInside" id="McN-Mr-yQC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPY-It-7L1">
+                                <rect key="frame" x="16" y="76" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WPY-It-7L1" firstAttribute="leading" secondItem="Pks-uC-SKq" secondAttribute="leading" constant="16" id="37N-ay-gdV"/>
+                            <constraint firstItem="HFI-L2-UJM" firstAttribute="top" secondItem="pRB-hs-ghh" secondAttribute="bottom" constant="20" id="782-mB-ZN9"/>
+                            <constraint firstItem="HFI-L2-UJM" firstAttribute="top" secondItem="tkz-cF-al1" secondAttribute="bottom" id="8vo-Eh-SOg"/>
+                            <constraint firstAttribute="trailing" secondItem="tkz-cF-al1" secondAttribute="trailing" id="DGv-Lr-cCh"/>
+                            <constraint firstItem="pRB-hs-ghh" firstAttribute="centerX" secondItem="Pks-uC-SKq" secondAttribute="centerX" id="OD9-bl-lGN"/>
+                            <constraint firstItem="WPY-It-7L1" firstAttribute="top" secondItem="P2A-ET-Ktu" secondAttribute="bottom" constant="20" id="cYT-zK-MJz"/>
+                            <constraint firstAttribute="trailing" secondItem="WPY-It-7L1" secondAttribute="trailing" constant="16" id="d4F-v1-mCC"/>
+                            <constraint firstItem="tkz-cF-al1" firstAttribute="top" secondItem="Pks-uC-SKq" secondAttribute="top" id="huP-XZ-3bb"/>
+                            <constraint firstItem="tkz-cF-al1" firstAttribute="leading" secondItem="Pks-uC-SKq" secondAttribute="leading" id="pZp-1i-dGv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PyE-rQ-XoI"/>
+                    <connections>
+                        <outlet property="captureButton" destination="pRB-hs-ghh" id="JBt-Ed-05M"/>
+                        <outlet property="messageLabel" destination="WPY-It-7L1" id="3ee-bz-BOT"/>
+                        <outlet property="previewView" destination="tkz-cF-al1" id="J1q-DP-KOE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWc-55-mvr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1417" y="-886"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ukC-Z5-yzS"/>
+        <segue reference="V97-F0-u6Y"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Camera" width="256" height="256"/>
+        <image name="Citrus" width="300" height="300"/>
+        <image name="Egg" width="237" height="177.5"/>
+        <image name="GiveStar" width="256" height="256"/>
+        <image name="Lemon" width="846" height="600"/>
+        <image name="Strawberry" width="306" height="306"/>
+        <image name="banana" width="124" height="101.5"/>
+        <image name="banner5" width="199" height="284"/>
+        <image name="carrot" width="112.5" height="112.5"/>
+        <image name="click" width="48" height="48"/>
+        <image name="defaultPhoto" width="540" height="540"/>
+        <image name="orange" width="260" height="173"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
