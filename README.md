@@ -156,8 +156,8 @@ Use the View Controller to take the photo in the mobile.
 
 After you take the photo, than you can give the star with the favorite Food.
 
-![image-20250425110332127](C:\Users\great\AppData\Roaming\Typora\typora-user-images\image-20250425110332127.png)
 
+![image-20250425112212590](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425112212590.png)
 
 **See the information**
 
@@ -184,8 +184,7 @@ To introduct the Food Nutritional Value
 
 **Display the Star page**
 
-
-![image-20250425111806498](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425111806498.png)
+![image-20250425111951725](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425111951725.png)
 
 
 **Edit the Star page**
