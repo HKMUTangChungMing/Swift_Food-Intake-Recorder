@@ -1,5 +1,7 @@
 # Swift_Food-Intake-Recorder
 Swift_Food-Intake-Recorder
+# DEMO
+![aasadasda.gif](https://s2.loli.net/2025/04/25/VHrmKInwzouB863.gif)
 
 # Introduction
 
