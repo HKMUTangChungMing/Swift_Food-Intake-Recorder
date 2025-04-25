@@ -185,7 +185,7 @@ To introduct the Food Nutritional Value
 **Display the Star page**
 
 
-![image-20250425110438053](C:\Users\great\AppData\Roaming\Typora\typora-user-images\image-20250425110438053.png)
+![image-20250425111806498](http://pdm888.oss-cn-beijing.aliyuncs.com/img/image-20250425111806498.png)
 
 
 **Edit the Star page**
